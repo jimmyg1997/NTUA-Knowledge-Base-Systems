@@ -9,12 +9,12 @@ This was implemented in [Protégé](https://protege.stanford.edu/), which create
 ## 2 - URI : N-triples RDFs
 There are various types of RDFs. But the most frequently used in terms of semantic web is [N-triples RDFs](https://www.w3.org/2001/sw/RDFCore/ntriples/). N-Triples is a line-based, plain text format for representing the correct answers for parsing RDF/XML test cases as part of the RDF Core working group. The conversion of all *data properties * & *object properties* was implemented through the scripts : 
 * **Person class** : *name-triples.py*
- * *<Preson> <data prop> <value>* (900 MB)
- * *<Person> <obj prop (is role of) > <Person> (3.9 GB)
+  * *<Preson> <data prop> <value>* (900 MB)
+  * *<Person> <obj prop (is role of) > <Person> (3.9 GB)
 
 * **Movie class** : *title-triples.py*
- * *<Movie> <data prop> <value>* (980 MB)
- * *<Movie> <obj prop (has role of)> <Person> (3.9 GB)
+  * *<Movie> <data prop> <value>* (980 MB)
+  * *<Movie> <obj prop (has role of)> <Person> (3.9 GB)
 
 ## 4 - Expended Queries 
 ### DBPedia
