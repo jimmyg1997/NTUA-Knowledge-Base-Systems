@@ -1,9 +1,20 @@
 ## 1 - Ontology (Vocabulary)
-An ontology is a vocabulary defining the concepts and relationships used to describe an area of concern. It's composed of:
+This was implemented in [Protégé](https://protege.stanford.edu/), which create ontologies in *.owl* format. An ontology is a vocabulary defining the concepts and relationships used to describe an area of concern. It's composed of:
 
-* classes (e.g. Car, Building, Person, Disease, Source Code) to represent a concept.
-* properties (e.g. horsepower, financed By, date of birth, has Symptoms, Author) to represent relation between concepts.
-* rules (e.g. A person have a unique date of birth). Ontologies can be created for every area of concern and by everyone using RDF (Resource Description Framework), RDFS (RDF Schema) and OWL (Web Ontology Language).
+* **Classes** (e.g. Department, Movie, Person) to represent a concept.
+* **Data Properties** (e.g. average_rating, birth_year,death_year, end_year) to represent relation between concepts.
+* **Object Properties - Rules** (e.g. A movie have an actor). Ontologies can be created for every area of concern and by everyone using RDF (Resource Description Framework), RDFS (RDF Schema) and OWL (Web Ontology Language).
+
+
+## 2 - URI : N-triples RDFs
+There are various types of RDFs. But the most frequently used in terms of semantic web is [N-triples RDFs](https://www.w3.org/2001/sw/RDFCore/ntriples/). N-Triples is a line-based, plain text format for representing the correct answers for parsing RDF/XML test cases as part of the RDF Core working group. The conversion of all *data properties * & *object properties* was implemented through the scripts : 
+* **Person class** : *name-triples.py*
+ * *<Preson> <data prop> <value>* (900 MB)
+ * *<Person> <obj prop (is role of) > <Person> (3.9 GB)
+
+* **Movie class** : *title-triples.py*
+ * *<Movie> <data prop> <value>* (980 MB)
+ * *<Movie> <obj prop (has role of)> <Person> (3.9 GB)
 
 ## 4 - Expended Queries 
 ### DBPedia
