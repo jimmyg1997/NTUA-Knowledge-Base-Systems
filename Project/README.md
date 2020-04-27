@@ -11,12 +11,12 @@ There are various types of RDFs. But the most frequently used in terms of semant
 * **Person class** : *name-triples.py*
 ```
 <<Preson>> <<data prop>> <<value>>              (900 MB)
-<<Preson>> <<obj prop (is role of)>> <<Movie>> (3.9 GB)
+<<Preson>> <<obj prop (is role of)>> <<Movie>>  (3.9 GB)
 ```
 
 * **Movie class** : *title-triples.py*
 ```
-<<Movie>> <<data prop>> <<value>>              (980 MB)
+<<Movie>> <<data prop>> <<value>>               (980 MB)
 <<Movie>> <<obj prop (has role of)>> <<Person>> (3.9 GB)
 ```
 
