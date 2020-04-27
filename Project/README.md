@@ -20,7 +20,14 @@ There are various types of RDFs. But the most frequently used in terms of semant
 <<Movie>> <<obj prop (has role of)>> <<Person>> (3.9 GB)
 ```
 
-## 4 - Expended Queries 
+## 3 Simple SPARQL Queries
+After we properly configured *database/virtuoso.ini* file we correctly loaded the N-triples RDFs into a Semnatic Database through the **Virtuoso**. Now we are ready to execute the **SPARQL queries**. [SPARQL](https://www.wikiwand.com/en/SPARQL) is a rdf query languagef for semantic databases.
+
+## 4 - Expended SPARQL Queries 
 ### DBPedia
 **DBpedia** is a knowledge graph containing informations extracted from wikipedia . In this project **DBpedia** is used to perform 
 named entity recognition. In other word, to find class of entities (e.g., Italia is a country/PopulatedPLace.. or B.Obama is a President/Person..)
+
+### WikiData
+Loosely, you could describe [Wikidata](https://towardsdatascience.com/a-brief-introduction-to-wikidata-bb4e66395eb1) as Wikipedias database with over 46million data items (April 2018). Like Wikipedia, there are all kinds of data stored in Wikidata. As such, when you are looking for a specific dataset or if you want to answer a curious question, it can be a good start looking for that data at Wikidata first.
+
