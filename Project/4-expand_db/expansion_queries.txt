@@ -1,0 +1,263 @@
+|———————————————————————————————————————————————————————————————————————————————|
+|                           BLACK AND WHITE MOVIES                              |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+PREFIX ex:<http://www.example.com/>
+
+
+SELECT DISTINCT ?movie_id, (STR(?label) AS ?movieColor)
+WHERE{
+
+        ?movie_id ex:rating ?rating.
+        ?movie_id ex:voting ?voting.
+        FILTER( ?rating >= 8.0 and ?voting > 100000)
+    
+	BIND (SUBSTR(STR(?movie_id),28,9) AS ?imdb_id)
+
+        SERVICE <https://query.wikidata.org/sparql>{
+                VALUES ?type {wd:Q5398426 wd:Q11424}
+                ?movie wdt:P345 ?imdb_id;
+                       wdt:P462 ?color.
+
+                ?color rdfs:label ?label.
+                FILTER (LANG(?label) = "en")
+                FILTER (STR(?label) = 'black-and-white')
+                
+	}
+       
+}
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                   JUST COMEDY                                 |
+|———————————————————————————————————————————————————————————————————————————————|
+
+PREFIX ex:<http://www.example.com/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+
+SELECT DISTINCT ?movie_id
+WHERE{
+	?movie_id ex:is_genre ?gernes.
+	FILTER(?(COUNT(?gernes)) == 1)
+	BIND (SUBSTR(STR(?movie_id),28,9) AS ?imdb_id)
+
+	SERVICE <https://query.wikidata.org/sparql>{
+	    VALUES ?type {wd:Q40831}
+		?imdb_id ?y ?type.
+	}	
+}
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                 COMEDY WRITERS                                |
+|———————————————————————————————————————————————————————————————————————————————|
+
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+PREFIX ex:<http://www.example.com/>
+
+
+SELECT DISTINCT ?movie_id, (STR(?label) AS ?movieWriter)
+WHERE{
+
+        ?movie_id ex:rating ?rating.
+        ?movie_id ex:voting ?voting.
+        FILTER( ?rating >= 9.0 and ?voting > 100000)
+    
+	BIND (SUBSTR(STR(?movie_id),28,9) AS ?imdb_id)
+
+        SERVICE <https://query.wikidata.org/sparql>{
+                VALUES ?type {wd:Q5398426 wd:Q11424}
+                ?movie wdt:P345 ?imdb_id;
+                       wdt:P58 ?writer.
+
+                ?writer rdfs:label ?label.
+                FILTER (LANG(?label) = "en")
+
+                
+	}
+        
+        
+}
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                DRAMATIC ACTORS                                |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+PREFIX ex:<http://www.example.com/>
+
+
+SELECT DISTINCT ?movie_id,(STR(?label) AS ?dramaticActor)
+WHERE{
+
+        ?movie_id ex:rating ?rating.
+        ?movie_id ex:voting ?voting.
+        FILTER( ?rating >= 9.0 and ?voting > 100000)
+    
+	BIND (SUBSTR(STR(?movie_id),28,9) AS ?imdb_id)
+       
+        SERVICE <https://query.wikidata.org/sparql>{
+                VALUES ?type {wd:Q5398426 wd:Q11424}
+                ?movie wdt:P345 ?imdb_id;
+                       wdt:P161 ?actor.
+                ?actor wdt:P106 wd:Q33999;
+                       wdt:P19 ?dramatic_actors.
+
+                ?dramatic_actors rdfs:label ?label.
+                FILTER (LANG(?label) = "en")     
+	}
+        
+        
+}
+
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                EUROPEAN MOVIES                                |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+
+SELECT DISTINCT (STR(?label) AS ?european_movies)
+WHERE{
+
+	?movie_id ?y >z
+	BIND ( SUBSTR(STR(?movie_id), 28, 9) AS ?imdb_id)
+
+	SERVICE <https://query.wikidata.org/sparql>{
+		VALUES ?type {wd: Q5107}
+		?imdb_id wdt:P31/wdt:P279* ?type;
+			 wdt: P345 ?continent.
+		
+		?continent wdt:P106 wd:Q46;
+			   wdt:P19 ?european_movies.
+		
+		?european_movies rdfs:label ?label
+	}
+}
+
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                ENGLISH LANGUAGE                               |
+|———————————————————————————————————————————————————————————————————————————————|
+
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+PREFIX ex:<http://www.example.com/>
+
+
+SELECT DISTINCT ?movie_id,(STR(?label) AS ?englishLanguage)
+WHERE{
+
+        ?movie_id ex:rating ?rating.
+        ?movie_id ex:voting ?voting.
+        FILTER( ?rating >= 9.0 and ?voting > 100000)
+    
+	BIND (SUBSTR(STR(?movie_id),28,9) AS ?imdb_id)
+       
+        SERVICE <https://query.wikidata.org/sparql>{
+                VALUES ?type {wd:Q5398426 wd:Q11424}
+                ?movie wdt:P345 ?imdb_id;
+                       wdt:P364 ?language.
+
+                ?language wdt:P106 wd:Q1860.
+
+                ?language rdfs:label ?label
+                FILTER (LANG(?label) = "en")     
+	}
+        
+        
+}
+
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                MOVIES OF ’90s                                 |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+
+SELECT DISTINCT ?movie_id
+WHERE{
+	?movie_id ?y ?z
+	BIND (SUBSTR(STR(?movie_id), 28, 9) AS ?imdb_id)
+
+
+	SERVICE <https://query.wikidata.org/sparql>{
+
+		?imdb_id wdt:P577 ?year.
+		FILTER(?year >= 1990)
+		FILTER(?year <= 2000)
+	}
+}
+	
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                GREEK SUBTITLES                                |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/> 
+
+
+SELECT DISTINCT (STR(?label) AS ?greek_lang)
+WHERE{
+	?movie_id ?y ?z
+	BIND (SUBSTR(STR(?movie_id), 28, 9) AS ?imdb_id)
+
+
+	SERVICE <https://query.wikidata.org/sparql>{
+
+		VALUES ?type {wd: Q204028}
+		?imdb_id wdt:P31/wdt:P279* ?type;
+			 wdt: P364 ?language.
+		
+		?language wdt:P106 wd:Q9129.
+		
+		?language rdfs:label ?label
+                 FILTER (LANG(?label) = "en")
+	}
+}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

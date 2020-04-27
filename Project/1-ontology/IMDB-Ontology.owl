@@ -1,0 +1,1122 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-7="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasActor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isActorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasActress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasActress">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isActressOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasCinematographer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasCinematographer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isCinematographerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Cinematographer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasComposer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasComposer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isComposerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Composer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasDirector">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isDirectorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasEditor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasEditor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isEditorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Editor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasGerne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasGerne">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasKnown -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasKnown">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isKnownOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasProducer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasProducer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isProducerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasWriter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#hasWriter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isWriterOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isActorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isActorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isActressOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isActressOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isCinematographerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isCinematographerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Cinematographer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isComposerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isComposerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Composer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isDirectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isDirectorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isEditorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isEditorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Editor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isKnownOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isKnownOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isProducerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isProducerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Producer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isWriterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#isWriterOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Writer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#average_rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#average_rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#birth_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#birth_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#death_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#death_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#end_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#end_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#gerne_of_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#gerne_of_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#gerne_of_writer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#gerne_of_writer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Writer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#is_adult -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#is_adult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#is_series -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#is_series">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#end_year"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#movie_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#movie_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#name_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#name_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#runtime_minutes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#runtime_minutes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#start_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#start_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">start year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#subtitles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#subtitles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Adventure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Adventure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Animation_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Animation_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Art_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Art_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Art_Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Art_Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Assistant_Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Assistant_Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Biography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Biography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Camera_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Camera_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Casting_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Casting_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Casting_Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Casting_Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Cinematographer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Cinematographer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Costume_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Costume_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Costume_Designer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Costume_Designer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Crime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Documentary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Documentary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Drama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Drama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Editor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Editor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Editorial_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Editorial_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Family">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Film_Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Film_Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Film_Noir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Film_Noir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Game_Show -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Game_Show">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#History -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#History">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Horror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Horror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Make_Up_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Make_Up_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Music">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Music_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Music_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Musical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Musical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Mystery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Mystery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#News -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#News">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Reality_TV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Reality_TV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Romance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Romance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Sci-fi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Sci-fi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Short -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Short">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Sound_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Sound_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Sport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Talk_Show -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Talk_Show">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Thriller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Transportation_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Transportation_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#War -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#War">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Western">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Black_&amp;_White -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Black_&amp;_White">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ADamselInDistress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ADamselInDistress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#AlcoaPremiere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#AlcoaPremiere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Apparition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Apparition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <hasWriter rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FedericoFellini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#BlueSkies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#BlueSkies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#BroadwayMelodyOf1940 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#BroadwayMelodyOf1940">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Carefree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Carefree">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#DaddyLongLegs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#DaddyLongLegs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#EasterParade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#EasterParade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FedericoFellini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FedericoFellini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Writer"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#L&apos;Amore"/>
+        <isDirectorOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#VarietyLights"/>
+        <isWriterOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Apparition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FlashingSpikes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FlashingSpikes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FollowTheFleet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FollowTheFleet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FredAstaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FredAstaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+        <isActorOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ADamselInDistress"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FunnyFace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FunnyFace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#JohnBelushi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#JohnBelushi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#LaurenBacall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#LaurenBacall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#LetsDance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#LetsDance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#OnTheBeach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#OnTheBeach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Roberta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Roberta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#RoyalWedding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#RoyalWedding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#SecondChorus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#SecondChorus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ShallWeDance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ShallWeDance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#SilkStockings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#SilkStockings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#SwingTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#SwingTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheBandWagon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheBandWagon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheBarkleysOfBroadway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheBarkleysOfBroadway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheBelleOfNewYork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheBelleOfNewYork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheGayDivorcee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheGayDivorcee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheNotoriousLandlady -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheNotoriousLandlady">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ThePleasureOfHisCompany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ThePleasureOfHisCompany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheSkyIsTheLimit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheSkyIsTheLimit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheStoryOfVernonAndIreneCastle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TheStoryOfVernonAndIreneCastle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ThreeLittleWords -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ThreeLittleWords">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TopHat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#TopHat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#VarietyLights -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#VarietyLights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <hasDirector rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FedericoFellini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#YolandsAndTheThief -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#YolandsAndTheThief">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#YouWillNeverGetRich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#YouWillNeverGetRich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ZiegfeldFollies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#ZiegfeldFollies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#L&apos;Amore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#L&apos;Amore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#Movie"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/owner/ontologies/2019/6/untitled-ontology-7#FedericoFellini"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

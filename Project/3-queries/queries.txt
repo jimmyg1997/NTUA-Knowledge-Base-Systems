@@ -1,0 +1,108 @@
+|———————————————————————————————————————————————————————————————————————————————|
+|                                       QUERY 1                                 |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX ex: <http://www.example.com/>
+
+SELECT DISTINCT ?film_genre , (COUNT(?movie_id) AS ?number_of_movies)
+WHERE{
+
+?movie_id ex:is_genre ?genre.
+
+
+BIND ( STRAFTER(STR(?genre), "http://www.example.com/" ) AS ?film_genre)
+
+
+}
+GROUP BY ?film_genre
+ORDER BY DESC(?number_of_movies)
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                       QUERY 2                                 |
+|———————————————————————————————————————————————————————————————————————————————|
+
+PREFIX ex:<http://www.example.com/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+
+SELECT ?distributor_name, (COUNT(?imdb_id) AS ?number_of_movies)
+WHERE{
+
+?movie_id ex:rating ?rating.
+?movie_id ex:voting ?voting.
+
+
+FILTER( ?rating >= 7.0 )
+FILTER( ?voting >= 100000 )
+
+BIND (SUBSTR(STR(?movie_id),30,8) AS ?tmp)
+BIND (SUBSTR(STR(?tmp),1,8) AS ?imdb_id)
+
+
+SERVICE <http://dbpedia.org/sparql> {
+   ?movie   dbo:imdbId ?imdb_id;
+            dbo:distributor ?distributor.
+   BIND(STRAFTER(STR(?distributor),"resource/" ) AS  ?distributor_name)
+ 
+}
+
+
+}
+GROUP BY (?distributor_name)
+ORDER BY DESC(?number_of_movies)
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                       QUERY 3                                 |
+|———————————————————————————————————————————————————————————————————————————————|
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+PREFIX ex:<http://www.example.com/>
+
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX bd: <http://www.bigdata.com/rdf#> 
+PREFIX wd: <http://www.wikidata.org/entity/> 
+PREFIX p: <http://www.wikidata.org/prop/>
+
+
+SELECT DISTINCT (STR(?label) AS ?country_of_director), (COUNT(?imdb_id) AS ?number_of_movies)
+WHERE{
+
+?movie_id ex:rating ?rating.
+?movie_id ex:voting ?voting.
+
+
+FILTER( ?rating >= 8.5 )
+FILTER( ?voting >= 200000 )
+
+
+BIND (SUBSTR(STR(?movie_id),28,9) AS ?imdb_id)
+
+
+SERVICE <https://query.wikidata.org/sparql> {
+   VALUES ?type {wd:Q5398426 wd:Q11424}
+   ?movie wdt:P31/wdt:P279* ?type;
+          wdt:P345 ?imdb_id;
+          wdt:P57 ?director.
+
+   ?director wdt:P106 wd:Q2526255;
+             wdt:P19 ?city.
+
+   ?city wdt:P17 ?country .
+   
+   ?country rdfs:label ?label .
+   FILTER (LANG(?label) = "en")
+
+
+}
+
+ 
+}
+GROUP BY (?label)
+ORDER BY DESC(?number_of_movies)
+
+
+
+|———————————————————————————————————————————————————————————————————————————————|
+|                                       QUERY 4                                 |
+|———————————————————————————————————————————————————————————————————————————————|
